@@ -5,7 +5,7 @@ const SInputContainer= styled.div``;
 
 interface InputProps {
     id: string
-    type: 'email' | 'password'
+    type: 'email' | 'password' | 'text'
     placeholder: string;
 }
 

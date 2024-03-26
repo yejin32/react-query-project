@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const SButtonContainer = styled.div`
-    width: 50%;
+    width: 100%;
     display: flex;
     justify-content: center;
 
@@ -24,12 +24,15 @@ const SButtonContainer = styled.div`
 interface ButtonProps {
     id: string
     text: string
+    isLoading?: boolean
 }
 
-const Button: React.FC<ButtonProps> = ({id, text}: ButtonProps) => {
+const Button: React.FC<ButtonProps> = ({id, text, isLoading}: ButtonProps) => {
     return (
         <SButtonContainer>
-            <button id={id}>{text}</button>
+            <button id={id} disabled={isLoading}>
+            {isLoading ? '로딩 중...' : text}            
+            </button>
         </SButtonContainer>
     );
 };

@@ -2,7 +2,9 @@ import React from 'react';
 import styled from 'styled-components';
 
 const SButtonContainer = styled.div`
-    width: 50%;    
+    width: 50%;
+    display: flex;
+    justify-content: center;
 
     button {
         text-align: center;

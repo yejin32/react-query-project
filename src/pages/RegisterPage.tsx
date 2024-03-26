@@ -4,7 +4,14 @@ import ImgUploader from '../components/ImgUpload';
 import InputField from '../components/InputField';
 import Button from '../components/Button';
 
-const SRegisterContainer = styled.div``
+const SRegisterContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+`
 
 const RegisterPage = () => {
     return (
@@ -12,7 +19,7 @@ const RegisterPage = () => {
             <ImgUploader/>
             <InputField id='email' type='email' placeholder='ID 를 입력해주세요'/>
             <InputField id='password' type='password' placeholder='PW 를 입력해주세요'/>
-            <InputField id='passwordCheck' type='password' placeholder='PW 확인'/>
+            <InputField id='passwordCheck' type='password' placeholder='PW 확인' passwordCheck=''/>
             <InputField id='text' type='text' placeholder='이름을 입력해 주세요'/>
             <Button id='registerBtn' text='회원가입'/>
         </SRegisterContainer>

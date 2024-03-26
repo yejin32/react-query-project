@@ -19,6 +19,7 @@ const SBtnContainer = styled.div`
     gap: 10px; 
     a {
         flex: 1;
+        text-decoration: none;
     }
     button {
         width: 100%;
